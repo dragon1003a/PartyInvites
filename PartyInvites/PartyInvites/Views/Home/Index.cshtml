@@ -8,14 +8,27 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
     <title>Przyjęcie urodzinowe</title>
+    <style>
+        body{
+            background-color: #f1f1f1;
+        }
+
+        .btn a{
+            color:white;
+            text-decoration:none;
+        }
+    </style>
 </head>
 <body>
-    <div> 
-        <p>
-            Serdecznie zapraszam na przyjęcie.<br />
-        </p>
-        @Html.ActionLink("Wyślij potwierdzenie", "RsvpForm")
+    <div class="text-center"> 
+        <h2> Serdecznie zapraszam na przyjęcie!</h2> <br />
+        <h3> Ty również zostałeś zaproszony :) </h3>
+        <div class=" btn btn-success">
+            @Html.ActionLink("Wyślij potwierdzenie", "RsvpForm")
+        </div>
     </div>
 </body>
 </html>
